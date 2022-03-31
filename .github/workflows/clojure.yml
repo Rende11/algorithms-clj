@@ -13,9 +13,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
       
-    - name: Configure
-      run: ./configure
-      
     - name: Install Make
       run: make
     
