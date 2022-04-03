@@ -1,1 +1,3 @@
 * Algorithms with Clojure
+
+** [["./src/alorithms_clj/"][Binary search]]

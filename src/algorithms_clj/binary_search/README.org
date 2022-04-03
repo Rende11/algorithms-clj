@@ -1,4 +1,22 @@
 * Binary search
-This is and algorithm for searching element position inside sorted sequence.
+This is an algorithm for searching element position inside sorted sequence.
+
 ** General idea
+When we search for the target element - we extract guessed element from the middle of sequence and compare it with target.
+If guessed element equals to target - whooho! We found it.
+If guessed element bigger than target - that means our target is located at left side of guessed element and we can omit elements at right side.
+If guessed element smaller than target - we should search at right side and can omit left side.
+And now we can apply our search algorithm to sequence that is twice as short.
+
 ** Complexity
+On each iteration we reduce our search range by 2 times. In worst case we have to make 7 iteration for the sequence of 100 elements.
+Guesses for 1 - 100 sequence and target = 100:
+50 -> 75 -> 88 -> 94 -> 97 -> 99 -> 100
+
+If we increase sequence for 2 times (1 - 200 range and 200 target) we need 8 iterations, just one more than previous case :
+100 -> 150 -> 175 -> 188 -> 194 -> 197 -> 199 -> 200
+
+If we increase sequence for 10 times (1 - 1000 range and 1000 target) we need 10 iterations:
+500 -> 750 -> 875 -> 938 -> 969 -> 985 -> 993 -> 997 -> 999 -> 1000
+
+Complexity of this algorithm is *O(log n)*
