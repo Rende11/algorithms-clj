@@ -1,3 +1,4 @@
 * Algorithms with Clojure
+My implementation of popular algorithms
 
-** [["./src/alorithms_clj/"][Binary search]]
+** [["algorithms-clj/tree/master/src/algorithms_clj/binary_search"][Binary search]]
