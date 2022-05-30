@@ -1,0 +1,29 @@
+* Quicksort
+** General idea
+Do we need to sort empty sequence? - No
+Do we need to sort sequence with one element? - No, it's already sorted.
+How we can sort sequence with two elements? - We can compare each other.
+How we can sort sequence with three elements? - We can split it for two sequences and understand that some parts already sorted, and we just need to unite it properly.
+For doing it we can compare this items with some basic element, split sequence for two parts and unite it in sorted order - less part + basic-element + greater part.
+For basic element we can use first element of sequence - it doesn't matter, but don't forget to exclude it from splitted sequence. And now less and greater parts should be sorted recursively too.
+
+** Complexity
+In worst case - when sequence is already sorted we have to run through the sequence on each step and count of steps is equal for our sequence size.
+(qsort [1 2 3 4 5 6]) -> [] + [1] + (qsort [2 3 4 5 6])
+  (qsort [2 3 4 5 6]) -> [] + [2] + (qsort [3 4 5 6])
+    (qsort [3 4 5 6]) -> [] + [3] + (qsort [4 5 6])
+      (qsort [4 5 6]) -> [] + [4] + (qsort [5 6])
+        (qsort [5 6]) -> [] + [5] + (qsort [6])
+          (qsort [6]) -> [6]
+
+Call stack with *n* levels and on each level we process *n* elements - that's mean, in worst case it will be *O(n2)* (sounds bad).
+
+But in average case
+(qsort [3 1 2 6 5 4]) -> (qsort [1 2]) + 3 + (qsort [6 5 4])
+  (qsort [1 2]) -> [] + 1 + (qsort [2])
+    (qsort [2]) -> [2]
+  (qsort [6 5 4]) -> (qsort [5 4]) + 6 + []
+    (qsort [5 4]) -> (qsort [4]) + 5 + []
+      (qsort [4]) -> [4]
+We have call stack with ~*log(n)* levels with *n* operations on each.
+Totally we have *n log(n)* complexity - great result.
