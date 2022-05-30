@@ -1,6 +1,7 @@
-* Algorithms with Clojure
-[[https://github.com/Rende11/algorithms-clj/actions/workflows/clojure.yml/badge.svg)](https://github.com/Rende11/algorithms-clj/actions/workflows/clojure.yml][Clojure CI - tests]]
+* Algorithms with Clojure [[https://github.com/Rende11/algorithms-clj/actions/workflows/clojure.yml][https://github.com/Rende11/algorithms-clj/actions/workflows/clojure.yml/badge.svg]]
 My implementation of popular algorithms
 
 - [[./src/algorithms_clj/binary_search][Binary search]]
 - [[./src/algorithms_clj/quicksort][Quicksort]]
+
+
