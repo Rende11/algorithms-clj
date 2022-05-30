@@ -1,5 +1,5 @@
 * Algorithms with Clojure
 My implementation of popular algorithms
 
-** [[./src/algorithms_clj/binary_search][Binary search]]
-** [[./src/algorithms_clj/quicksort][Quicksort]]
+- [[./src/algorithms_clj/binary_search][Binary search]]
+- [[./src/algorithms_clj/quicksort][Quicksort]]
