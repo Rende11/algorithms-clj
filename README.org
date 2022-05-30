@@ -1,5 +1,5 @@
 * Algorithms with Clojure
-[![Clojure CI](https://github.com/Rende11/algorithms-clj/actions/workflows/clojure.yml/badge.svg)](https://github.com/Rende11/algorithms-clj/actions/workflows/clojure.yml)
+[[https://github.com/Rende11/algorithms-clj/actions/workflows/clojure.yml/badge.svg)](https://github.com/Rende11/algorithms-clj/actions/workflows/clojure.yml][Clojure CI - tests]]
 My implementation of popular algorithms
 
 - [[./src/algorithms_clj/binary_search][Binary search]]
